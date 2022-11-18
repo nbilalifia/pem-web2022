@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Multimedia HTML 5</title>
+	</head>
+	<body>
+		<h2> Belajar Multimedia - HTML 5</h2>
+		<p>
+		<button onclick="playVid()" type="button">Play Video</button>
+		<button onclick="pauseVid()" type="button">Pause Video</button>
+		<button onclick="durationVid()" type="button">Duration Video</button>
+		<button onclick="enableControls()" type="button">Enable Controls</button>
+		<button onclick="DisableControls()" type="button">Disable Controls</button>
+		<button onclick="Checkcontrols()" type="button">Check Controls</button>
+		</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/RnO0HhILXi4" 
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+		clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+		></iframe>
+		<video width="420" id="myvideo">
+			<source src="movie.mp4" type="video/mp4">
+			Browser not support...
+		</video>
+		<p>Can my browser play mp4 videos? <span><button onclick=
+		"supportType (event, 'video/mp4','avol.42E01E,mp4a.40.2')" type="button">test
+	</button>
+	</span></p>
+		<p>Can my browser play OGG videos? <span> <button onclick=
+		"supportype (event, 'video/ogg','theora, vorbis')" type="button">test
+	</button>
+	</span></p>
+	</body>
+	<script>
+	var vid = document.getElementById("myvideo");
+
+	function playVid() {
+	vid.play();
+	}
+
+	function pausevid() {
+	vid.pause();
+	}
+	
+	function durationVid() {
+	alert(vid.duration)
+	}
+	
+	<script>
+</html>
+
