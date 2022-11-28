@@ -1,0 +1,22 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title> Hello Javascript </title>
+    </head>
+    <body>
+        <h1>
+            Belajar Javascript
+        </h1>
+        <p id="par1">(P1) Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorep Ipsum</p>
+        <p id="par2">(P2) Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorep Ipsum</p>
+        <p id="par3">(P3) Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorep Ipsum</p>
+        <p id="par4">(P4) Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorep Ipsum</p>
+        <p id="hasil-output">(P5) Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorep Ipsum</p>
+        </p>
+        <script>
+        var hasil = document.getElementById("hasil-output");
+        //menampilkan oput ke elemen hasil
+        hasil.innerHTML = "Aku suka javascript";
+        </script>
+    </body>
+</html>
