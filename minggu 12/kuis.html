@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Kuis minggu 12</title> 
+</head>
+<body>
+    <h3> Daftar Nama HMTI 2023 </h3>
+    <form onsubmit="apl.appData()" action="javascript:void(0):" method="post">
+    <input type="text" placeholder="Inputkan Nama" id="namaMhs"> 
+    <input type="submit" value="+">
+</form>
+<div id="counter">
+</div>
+<table border="1">
+    <thead>
+        <tr><td>Data Nama HMTI 2023</td></tr>
+    </thead>
+    <tbody id="daftarNama"></tbody>
+</table>
+<script>
+    var apl = new function(){
+        this.el = document.getElementById('daftarNama');
+        this.mhs= ['Toni', 'Tono', 'Tini', 'Tino'];
+        this.barisAll = function() {
+            var data='';
+            
+            if (this.mhs.length > 0) {
+                for (i = 0; i < this.mhs.length; i++) {
+                    data += '<tr>';
+                    data += '<td>'; + this.mhs[i] + '' + i;
+                    data += '<button onclick="apl.delData{'+ i + '}">Del</button>';
+                    data += '<button onclick="apl.upData{'+ i +'}">Upd</button>';
+                    data += '</td></tr>';
+                    }
+                }
+            this.count = function(data) {
+                var el = document.getElementById('counter');
+                if (data) {
+                    el.innerHTML = 'Jumlah :'+ data + ' ' + 'Mahasiswa';
+                } else {
+                    el.innerHTML = 'Data Kosong';
+                }
+            };
+
+            this.addDta = function() {
+                el = document.getElementById('namaMhs');
+                var namaMhs = el.value;
+                if (namaMhs) {
+                    this.mhs.push(namaMhs.trim());
+                    el.value = '';
+                    this.barisAll(); 
+                    }
+                }
+
+                this.delData = function(item){
+                    var yakin = confirm("yakin akan dihapus");
+                    if (yakin==true){
+                        this.mhs.splice(item, 1);
+                    }
+                    this.barisAll();
+                }
+            }
+            apl.barisAll
+        </script>
+    </body> 
+        }
+    
