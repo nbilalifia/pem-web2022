@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <title> Kedaibuku - Online BookStore </title>
+    </head>
+    <body>
+        <header>
+            <a href="#home" class="logo">Kedai<span>Buku</span></a>
+            
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">cart</a></li>
+                <li><a href="#">Categories</a>
+                    <ul>
+                        <li><a href="#">Novel</a></li>
+                        <li><a href="#">Komik</a></li>
+                        <li><a href="#">Edukasi</a></li>
+                        <li><a href="#">Religi</a></li>
+                        <li><a href="#">Sejarah</a></li>
+                        <li><a href="#">Anak-Anak</a></li>
+                        <li><a href="#">Sekolah</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">menu</a>
+                    <ul>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Top Weekly</a></li>
+                        <li><a href="#">Pre-Order</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+            </header>
+
+            <div class="login-form-container">
+
+                <i class="fas fa-time" id="form-"></i>
+
+                <form action="">
+                    <h3>login</h3>
+                    <input type="email" class="box" placeholder="enter your email">
+                    <input type="password" class="box" placeholder="enter your password">
+                    <input type="submit" value="login now" class="btn">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">remember me</label> 
+                    <p>forget password?<a href="#">click here</a></p>
+                    <p>don't have any account?<a href="#">register</a></p>
+                </form>
+            </div>
+            <section class="home" id="home">
+
+                <div class="swiper home-slider">
+            
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide" style="background:url(gambar3.jpg) no-repeat">
+                            <div class="content">
+                                <h2><u>DISKON 25-70%</u></h2>
+                                <h3>Setiap pembelian min 150.000</h3>
+                                <h3>dengan pembayaran debit</h3>
+                                <h4> Periode 10-25 Oktober 2022</h4>
+                                <span>S&K Berlaku</span>
+                                <a href="#" class="btn">shop now</a>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            
+            </section>
+            
+            <section class="banner-container">
+            
+                <div class="banner">
+                    <img src="novel.jpg" alt="">
+                    <div class="content">
+                        <h3>Buku Novel</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <img src="komik.jpg" alt="">
+                    <div class="content">
+                        <h3>Buku Komik</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <img src="anak.jpg" alt="">
+                    <div class="content">
+                        <h3>Buku Anak-anak</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <img src="religi.jpg" alt="">
+                    <div class="content">
+                        <h3>Buku Religi</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <img src="edukasi.jpg" alt="">
+                    <div class="content">
+                        <h3>Buku Edukasi</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+                
+                <div class="banner">
+                    <img src="alat.jpg" alt="">
+                    <div class="content">
+                        <h3>Alat Tulis</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+            
+            </section>
+            
+            <section class="products" id="products">
+            
+                <h1 class="heading"> exclusive <span>products</span> </h1>
+            
+                <div class="filter-buttons">
+                    <div class="buttons" data-filter="all">all</div>
+                    <div class="buttons" data-filter="arrivals">new arrivals</div>
+                    <div class="buttons" data-filter="featured">featured</div>
+                    <div class="buttons" data-filter="special">special offer</div>
+                    <div class="buttons" data-filter="seller">best seller</div>
+                </div>
+            
+                <div class="box-container">
+            
+                    <div class="box" data-item="featured">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku1.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Cantik itu Luka</h3>
+                            <div class="price">
+                                <div class="amount">RP. 150.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(354)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="special">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku2.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Laut Bercerita</h3>
+                            <div class="price">
+                                <div class="amount">RP. 75.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(780)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="seller">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Hujan</h3>
+                            <div class="price">
+                                <div class="amount">RP. 65.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(63)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="arrivals">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>I Want to Die but I Want to Eat Tteokpokki</h3>
+                            <div class="price">
+                                <div class="amount">RP. 80.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(234)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="featured">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Komik : I Want to Eat Your Pancreas 01</h3>
+                            <div class="price">
+                                <div class="amount">RP. 27.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(30)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="arrivals">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Atomic Habits</h3>
+                            <div class="price">
+                                <div class="amount">Rp. 90.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(140)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="special">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku7.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Komik : Haikyu!! 01</h3>
+                            <div class="price">
+                                <div class="amount">RP. 23.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(290)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="seller">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku8.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Bumi</h3>
+                            <div class="price">
+                                <div class="amount">RP. 75.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(40)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="seller">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku9.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Laskar Pelangi</h3>
+                            <div class="price">
+                                <div class="amount">RP. 80.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(79)</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box" data-item="featured">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="buku10.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Twilight</h3>
+                            <div class="price">
+                                <div class="amount">RP. 85.000</div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(41)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+            <section class="deal">
+            
+            
+                <div class="content">
+                    <span>Diskon Akhir Tahun</span>
+                    <h3>Semua Koleksi KedaiBuku</h3>
+                    <p>Diskon hingga 70%</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+            
+            </section>
+            
+            </section>
+            
+            <section class="review" id="review">
+            
+                <h1 class="heading"> User <span> Discussion</span> </h1>
+            
+                <div class="swiper review-slide">
+            
+                    <div class="swiper-wrapper">
+            
+                        <div class="swiper-slide slide">
+                            <p>Laut Bercerita bener-bener nguras emosi banget, udah 3 hari sejak namatin itu novel tapi sampai sekarang masih belum bisa moveon sama laut</p>
+                            <div class="user">
+                                <img src="user1.jpg" alt="">
+                                <div class="info">
+                                    <h3>Hong Eunchae</h3>
+                                    <span>Emotional client</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-slide slide">
+                            <p>Buat yang pengen nyari bacaan setelah reading slump, aku saranin buat baca novel hujan karya tere liye.</p>
+                            <div class="user">
+                                <img src="user2.jpg" alt="">
+                                <div class="info">
+                                    <h3>Huening Kamal</h3>
+                                    <span>happy client</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-slide slide">
+                            <p>Ada yang punya saran bacaan untuk orang yang sedang demotivated?</p>
+                            <div class="user">
+                                <img src="user3.jpg" alt="">
+                                <div class="info">
+                                    <h3>Yang Jeongin</h3>
+                                    <span>Searcher client</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-slide slide">
+                            <p>Terima kasih banyak buat user kedai buku yang udah ngasih review tentang hujan, beneran ampuh banget ngilangin reading slump</p>
+                            <div class="user">
+                                <img src="user4.jpg" alt="">
+                                <div class="info">
+                                    <h3>Park Jisung</h3>
+                                    <span>happy client</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-slide slide">
+                            <p>Tolong saranin buku resep masakan yang gampang dan ga ribet dong, mau kupraktekkin buat masakin mas crush tercinta</p>
+                            <div class="user">
+                                <img src="user5.jpg" alt="">
+                                <div class="info">
+                                    <h3>Nayeon</h3>
+                                    <span>searcher client</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-slide slide">
+                            <p>aku barusan selesai namatin haikyu!! season 3, kalau mau lanjut baca manganya kira-kira mulai dari volume berapa ya?</p>
+                            <div class="user">
+                                <img src="user6.jpg" alt="">
+                                <div class="info">
+                                    <h3>Choi Soobin</h3>
+                                    <span>happy client</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+            </section>
+            <section class="contact" id="contact">
+            
+                <h1 class="heading"> <span>contact</span> us </h1>
+            
+                <div class="icons-container">
+            
+                    <div class="icons">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Alamat</h3>
+                        <p>Ungaran, Kabupaten Semarang, Jawa Tengah - 50516</p>
+                    </div>
+            
+                    <div class="icons">
+                        <i class="fas fa-envelope"></i>
+                        <h3>email</h3>
+                        <p>KedaiBuku@gmail.com</p>
+                    </div>
+            
+                    <div class="icons">
+                        <i class="fas fa-phone"></i>
+                        <h3>phone</h3>
+                        <p>08990171238819</p>
+                        <p>024161318318</p>
+                    </div>
+            
+                </div>
+            
+                <div class="row">
+            
+                    <form action="">
+                        <h3>What Do You think?</h3>
+                        <div class="inputBox">
+                            <input type="text" placeholder="your name">
+                            <input type="email" placeholder="your email">
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" placeholder="your number">
+                            <input type="text" placeholder="your subject">
+                        </div>
+                        <textarea placeholder="your message" cols="30" rows="10"></textarea>
+                        <input type="submit" value="send message" class="btn">
+                    </form>
+            
+                    <iframe class="map" src="https://goo.gl/maps/KBBNRvxrHVQ327pK8" allowfullscreen="" loading="lazy"></iframe>
+            
+                </div>
+            
+            </section>
+            
+            <section class="blogs" id="blogs">
+                
+                <h1 class="heading"> our <span>Article</span></h1>
+            
+                <div class="swiper blogs-slider">
+            
+                    <div class="swiper-wrapper">
+            
+                        <div class="swiper-slide slide">
+                            <div class="image">
+                                <img src="gambar4.jpeg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Bagaimana cara merawat buku agar tidak menguning?</h3>
+                                <p>Readers pasti pernah memiliki buku yang warnanya sudah menguning karena disimpan dalam...</p>
+                                <a href="#" class="btn">read more</a>
+                                <div class="icons">
+                                    <a href="#"> <i class="fas fa-calendar"></i> 20th December, 2022 </a>
+                                    <a href="#"> <i class="fas fa-user"></i> by KedaiBuku </a>
+                                </div>
+                            </div>
+                        </div>
+            
+                </div>
+            
+            </section>
+            
+            <section class="footer">
+            
+                <div class="box-container">
+            
+                    <div class="box">
+                        <h3>about us</h3>
+                        <p>KedaiBuku merupakan website yang dapat digunakan sebagai media pembelian buku sekaligus sarana bagi para user untuk bisa saling berdiskusi satu sama lain dan me-review buku yang disediakan dalam website</p>
+                    </div>
+            
+                    <div class="box">
+                        <h3>category</h3>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Novel </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Komik </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Religi </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Edukasi </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Sejarah </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Sekolah </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Anak-Anak </a>
+                    </div>
+            
+                    <div class="box">
+                        <h3>quick links</h3>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Home </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Cart </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Categories </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> Review </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
+                    </div>
+            
+                </div>
+            
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-tiktok"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            
+                <div class="credit"> &copy; copyright @ 2022 by <span> KedaiBuku </span> </div>
+                
+            </section>
+            <script src="script.js"></script>
+
+</body>
+</html>
