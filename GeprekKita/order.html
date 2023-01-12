@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeprekKita  </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <a href="#home" class="logo"> Geprek<span>Kita</span> </a>
+    
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="popular.html">popular</a>
+        <a href="menu.html">menu</a>
+        <a href="order.html">order</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+    
+</header>
+
+<section class="search-form-container">
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</section>
+
+<section class="shopping-cart-container">
+
+    <div class="products-container">
+
+        <h3 class="title">Pesanan Anda</h3>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="mozzaaja.webp" alt="">
+                <div class="content">
+                    <h3>Geprek Mozzarella</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> Harga : </span>
+                    <span class="price"> 13.000 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="bbqkomplit.jpeg" alt="">
+                <div class="content">
+                    <h3>Geprek BBQ Komplit</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> 14.000 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="menu7.jpg" alt="">
+                <div class="content">
+                    <h3>Es Teh</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> 3.000 </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-total">
+
+        <h3 class="title"> Total Pesanan </h3>
+
+        <div class="box">
+            <h3 class="total"> total : <span>20.000</span> </h3>
+            <a href="#" class="btn">Lanjutkan Pemesanan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="login-form-container">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" name="" placeholder="Masukkan Email" id="" class="box">
+        <input type="password" name="" placeholder="Masukkan Password" id="" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+
+</div>
+
+    <section class="order" id="order">
+
+    <div class="heading">
+        <h3>Format Order</h3>
+    </div>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <img src="image/icon-1.png" alt="">
+            <h2>jam Buka</h2>
+            <h3>8:00 Pagi - 21:00 Malam</h3>
+        </div>
+
+        <div class="icons">
+            <img src="image/icon-2.png" alt="">
+            <h2>Kontak Pemesanan</h2>
+            <h3>082111223342</h3>
+        </div>
+
+        <div class="icons">
+            <img src="image/icon-3.png" alt="">
+            <h2>Alamat Toko</h2>
+            <h3>Pendrikan Kidul, Semarang Tengah, Semarang (Sebelah Udinus)</h3>
+        </div>
+
+    </div>
+
+    <form action="">
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>Nama Pemesan</span>
+                <input type="text" placeholder="customer's name" name="" id="">
+            </div>
+            <div class="inputBox">
+                <span>Nomer Telpon Pemesan</span>
+                <input type="number" placeholder="customer's number" name="" id="">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>Nama Order</span>
+                <input type="text" placeholder="Makanan yang dipesan" name="" id="">
+            </div>
+            <div class="inputBox">
+                <span>Jumlah Pesanan</span>
+                <input type="number" placeholder="number or orders" name="" id="">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>Tambahkan Deskripsi</span>
+                <input type="text" placeholder="your message" name="" id="">
+            </div>
+            <div class="inputBox">
+                <span>Waktu Pembelian</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>Nama Alamat Pemesan</span>
+                <textarea placeholder="your address" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="Submit Pesanan" class="btn">
+
+    </form>
+
+</section>
+
+<section class="footer">
+    
+    <div class="bottom">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+
+        <div class="credit"> © 2023 <span>GeprekKita</span> | all rights reserved </div>
+        
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

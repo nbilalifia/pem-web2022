@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeprekKita  </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <a href="#home" class="logo"> Geprek<span>Kita</span> </a>
+    
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="popular.html">popular</a>
+        <a href="menu.html">menu</a>
+        <a href="order.html">order</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+    
+</header>
+
+<section class="search-form-container">
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</section>
+
+<section class="shopping-cart-container">
+
+    <div class="products-container">
+
+        <h3 class="title">Pesanan Anda</h3>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="mozzaaja.webp" alt="">
+                <div class="content">
+                    <h3>Geprek Mozzarella</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> Harga : </span>
+                    <span class="price"> 13.000 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="bbqkomplit.jpeg" alt="">
+                <div class="content">
+                    <h3>Geprek BBQ Komplit</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> 14.000 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="menu7.jpg" alt="">
+                <div class="content">
+                    <h3>Es Teh</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> 3.000 </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-total">
+
+        <h3 class="title"> Total Pesanan </h3>
+
+        <div class="box">
+            <h3 class="total"> total : <span>20.000</span> </h3>
+            <a href="#" class="btn">Lanjutkan Pemesanan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="login-form-container">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" name="" placeholder="Masukkan Email" id="" class="box">
+        <input type="password" name="" placeholder="Masukkan Password" id="" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+
+</div>
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="gambar-2.png" alt="">
+        </div>
+    
+        <div class="content">
+            <span> Geprek No.1 Se-Kota Semarang</span>
+            <h3 class="title">GeprekKita dijamin termurah, terbersih, dan terlezat</h3>
+            <p> Berdiri sejak 2016, GeprekKita berkomitmen untuk memberikan ayam geprek yang terbaik untuk pelanggan semuanya. </p>
+            <p> Dengan pilihan berbagai menu dan level pedas, pelanggan dapat memilih menu kesukaannya dengan tingkat kepedasan yang diinginkan.</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src=" " alt="">
+                    <h3>fast delivery</h3>
+                </div>  
+                <div class="icons">
+                    <img src=" " alt="">
+                    <h3>fresh food</h3>
+                </div>   
+                <div class="icons">
+                    <img src=" " alt="">
+                    <h3>best quality</h3>
+                </div>  
+                <div class="icons">
+                    <img src=" " alt="">
+                    <h3>Best Price</h3>
+                </div>           
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="footer">
+    
+        <div class="bottom">
+    
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+    
+            <div class="credit"> © 2023 <span>GeprekKita</span> | all rights reserved </div>
+            
+        </div>
+    
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
